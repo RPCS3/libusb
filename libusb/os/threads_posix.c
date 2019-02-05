@@ -28,8 +28,10 @@
 # endif
 # include <unistd.h>
 # include <sys/syscall.h>
+# include <sys/time.h>
 #elif defined(__APPLE__)
 # include <pthread.h>
+# include <sys/time.h>
 #elif defined(__CYGWIN__)
 # include <windows.h>
 #endif
