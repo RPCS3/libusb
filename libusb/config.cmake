@@ -33,7 +33,6 @@ if (CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
 	)
 elseif(MSVC)
 	add_definitions(-D_CRT_SECURE_NO_WARNINGS)
-	append_compiler_flags(/Wp64)
 endif()
 
 check_include_files(sys/timerfd.h USBI_TIMERFD_AVAILABLE)
